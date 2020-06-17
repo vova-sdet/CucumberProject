@@ -35,11 +35,10 @@ public class UsersPageSteps {
     public void the_user_should_validate_the_Names_and_Emails_are_matching_the_with_the_provided_table(DataTable userDetails) throws InterruptedException {
 
         List<String> expectedUsersDetails = userDetails.asList();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
             for(int i = 0; i < expectedUsersDetails.size(); i++) {
                 String expectedDetail = expectedUsersDetails.get(i);
-                // wait.until(ExpectedConditions.visibilityOf(usersPage.usersDetails.get(i)));
                 String actualDetail = usersPage.usersDetails.get(i).getText();
                 Assert.assertEquals(expectedDetail, actualDetail);
             }
