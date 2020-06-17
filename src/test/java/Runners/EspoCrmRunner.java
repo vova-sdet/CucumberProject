@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/espoCRM/createUserSearch.feature",
+        features = "src/test/resources/espoCRM/espoCRMaccounts.feature",
         glue = "StepDefinitions",
         monochrome = false,
         dryRun = false

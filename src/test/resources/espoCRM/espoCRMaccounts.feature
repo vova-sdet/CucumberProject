@@ -25,19 +25,6 @@ Feature: : Validate new accounts creation in espoCRM
       | Calendar      |
       | Tasks         |
 
-#      | Accounts      |
-#      | Contacts      |
-#      | Leads         |
-#      | Opportunities |
-#      | Reports       |
-#      | HRs           |
-#      | Quotes        |
-#      | Products      |
-#      | Emails        |
-#      | Cases         |
-#      | Calendar      |
-#      | Tasks         |
-
 #  Test case 2: validation of new accounts creation with a 4 sets of new account details
 #  User goes to espoCRM demo page;
 #  User logins by clicking login button
