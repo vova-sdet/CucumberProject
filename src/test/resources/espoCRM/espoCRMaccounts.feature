@@ -53,7 +53,6 @@ Feature: : Validate new accounts creation in espoCRM
 #  User clicks "Users" button
 #  User validate the Names and Emails on UI are matching with the provided table
 
-#  @userDetails
   Scenario: user details validation
     When the user clicks the three dot button
     Then the user clicks the Users tab

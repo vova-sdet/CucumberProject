@@ -10,7 +10,6 @@ import org.junit.runner.RunWith;
         glue = "StepDefinitions",
         monochrome = false,
         dryRun = false
-        //tags = "@userDetails"
 )
 
 public class EspoCrmRunner {
