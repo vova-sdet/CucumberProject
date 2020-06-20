@@ -20,15 +20,18 @@ public class HomePageSteps {
 
     @Given("the user goes to espoCRM page and login")
     public void the_user_goes_to_espoCRM_page_and_login() {
+        // driver.manage().deleteAllCookies();
         driver.get(ConfigReader.getProperties("espoUrl"));
+        driver.manage().deleteAllCookies();
+        homePage.loginButton.click();
 
-        try {
-            if (homePage.loginButton.isDisplayed()) {
-                homePage.loginButton.click();
-            }
-        } catch (NoSuchElementException exception) {
-
-        }
+//        try {
+//            if (homePage.loginButton.isDisplayed()) {
+//                homePage.loginButton.click();
+//            }
+//        } catch (NoSuchElementException exception) {
+//
+//        }
     }
 
     @Then("the user validate functions names")
